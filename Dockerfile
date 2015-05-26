@@ -1,7 +1,8 @@
 FROM jenkins
 
 USER root
-RUN apt-get update && apt-get install -y nodejs npm
+RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash -
+RUN apt-get update && apt-get install -y nodejs
 RUN npm install -g grunt-cli
 
 # set shell variables for java installation
