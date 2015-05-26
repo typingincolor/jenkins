@@ -1,0 +1,9 @@
+copyartifact:1.35.1
+build-pipeline-plugin:1.4.7
+git:2.3.5
+gradle:1.24
+gravatar:2.1
+jacoco:1.0.19
+violations:0.7.11
+credentials-binding:1.4
+envinject:1.91.3
