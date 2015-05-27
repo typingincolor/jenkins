@@ -24,4 +24,7 @@ RUN update-alternatives --install /usr/bin/java java $JAVA_HOME/bin/java 20000 &
 COPY plugins.txt /usr/share/jenkins/ref/
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/ref/plugins.txt
 
+RUN mkdir /var/jenkins_home/.gradle
+COPY gradle.properties /var/jenkins_home/.gradle/
 USER jenkins
+
