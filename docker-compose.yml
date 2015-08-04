@@ -1,0 +1,6 @@
+jenkins:
+  image: typingincolor/jenkins
+  ports:
+    - "9000:8080"
+  volumes:
+    - ~/docker/jenkins:/var/jenkins_home
